@@ -43,6 +43,7 @@ class ClientHandler extends Thread {
                     out.flush();
                 } catch (IOException e) {
                     System.out.println("Client has stopped");
+                    break;
                 }
             }
             socket.close();
